@@ -21,7 +21,7 @@ void * thread(void *arg)
 for(;;)
  {
   printf("Thread process : %d\n",global++);
-  sleep(2);
+  _sleep(2);
   }
 }
 
@@ -38,7 +38,7 @@ pthread_create( NULL, NULL, &thread, NULL );
 for(;;)
  {
   printf("Main process   : %d\n",global++);
-  sleep(1);
+  _sleep(1);
   }
 return(EXIT_SUCCESS);
 }
