@@ -5,7 +5,7 @@ int main(){
 	int i,c;
 	int n_spaces=0,n_symbols=0,n_chars=0;
 
-	for(i=0;i<50;i++){
+	for(i=0;i<10;i++){
 		c=getchar();
 		if(c==EOF) break;
 		if(c=='\n') continue;
@@ -16,6 +16,7 @@ int main(){
 			case ',':
 			case '.':
 			case ';': n_symbols++;
+				  break;
 			default : n_chars++;
 		}
 			
