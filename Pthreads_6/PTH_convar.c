@@ -1,16 +1,17 @@
 //**************************************************************
-//	Program : pt_convar.c 
 //	Demonstrates the usage of pthread conditional variables
-//
-// 	2 October 20 : G.Seet
-// 	QNX 6.xx version - QNX example
 //****************************************************************
+// pthread_cond_wait 
+
+// pthread_cond_signal
+
 
 #include <stdio.h>
 #include <pthread.h>
-
+//macro 
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t cond = PTHREAD_COND_INITIALIZER;
+
 int condition = 0;
 int count = 0;
 
