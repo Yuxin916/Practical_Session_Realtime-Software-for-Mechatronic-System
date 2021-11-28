@@ -1,11 +1,8 @@
 //**********************************************************************
-// signal - Demostrated the seting up of a periodic timer and its use
-//				
+// signal - Demostrated the seting up of a periodic timer and its use		
 // Functions: timercreate, timersettime, signal
-//
-// October 2010, G.Seet
-//**********************************************************************
 
+//**********************************************************************
 #include <stdio.h>
 #include <signal.h>
 
@@ -31,6 +28,7 @@ for( i = 0; i < 100000; i++ ) {
    flushall( );
 
    if( i == 90000 ) raise( SIGINT );
+   // SIGINT is Ctrl-C 
    if( signal_count > 0 ) break;
    }
 
